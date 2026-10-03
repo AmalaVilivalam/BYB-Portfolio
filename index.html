@@ -3,68 +3,137 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Amala Vilivalam | Portfolio</title>
 
-    <link rel="stylesheet" href="/BYB-Portfolio/style.css">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 60px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            color: #222;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px;
+        }
+
+        section {
+            background-color: white;
+            padding: 35px;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background-color: #eeeeee;
+            padding: 10px 15px;
+            margin: 5px;
+        }
+
+        .project {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+        }
+
+        .project a {
+            color: #222;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <div class="nav-container">
 
-            <h2>AV</h2>
+    <!-- HEADER -->
 
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-            </div>
+    <header>
 
-        </div>
-    </nav>
+        <h1>Amala Vilivalam</h1>
 
-
-    <!-- HERO SECTION -->
-    <header class="hero">
-
-        <div class="hero-content">
-
-            <p class="eyebrow">
-                FINANCE & ECONOMICS • RUTGERS UNIVERSITY
-            </p>
-
-            <h1>Amala Vilivalam</h1>
-
-            <p class="intro">
-                Rutgers Business School student studying Finance and Economics
-                with interests in investment banking, equity research, and investing.
-            </p>
-
-            <a class="button" href="#projects">
-                View My Projects
-            </a>
-
-        </div>
+        <p>
+            Finance & Economics | Rutgers Business School
+        </p>
 
     </header>
 
 
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="#about">About</a>
+
+        <a href="#skills">Skills</a>
+
+        <a href="#projects">Projects</a>
+
+    </nav>
+
+
     <main>
 
-        <!-- PERSONAL STATEMENT -->
-        <section id="about">
 
-            <p class="section-label">
-                01 / ABOUT
-            </p>
+        <!-- PERSONAL STATEMENT -->
+
+        <section id="about">
 
             <h2>Personal Statement</h2>
 
-            <p class="statement">
+            <p>
                 I am a Finance and Economics student at Rutgers Business School
                 passionate about applying financial analysis, valuation, and market
                 research to understand businesses and investment opportunities.
@@ -73,182 +142,133 @@
         </section>
 
 
-        <!-- SKILLS -->
-        <section id="skills">
 
-            <p class="section-label">
-                02 / SKILLS
-            </p>
+        <!-- SKILLS -->
+
+        <section id="skills">
 
             <h2>Skills</h2>
 
-            <div class="skills-grid">
+            <div class="skills">
 
-                <div class="skill">Financial Modeling</div>
+                <span>Financial Modeling</span>
 
-                <div class="skill">Equity Valuation</div>
+                <span>Equity Valuation</span>
 
-                <div class="skill">
-                    Financial Statement Analysis
-                </div>
+                <span>Financial Statement Analysis</span>
 
-                <div class="skill">Market Research</div>
+                <span>Market Research</span>
 
-                <div class="skill">Microsoft Excel</div>
+                <span>Microsoft Excel</span>
 
-                <div class="skill">
-                    Microsoft PowerPoint
-                </div>
+                <span>Microsoft PowerPoint</span>
 
-                <div class="skill">Power BI</div>
+                <span>Power BI</span>
 
-                <div class="skill">HTML / CSS</div>
+                <span>HTML</span>
 
             </div>
 
         </section>
+
 
 
         <!-- PROJECTS -->
+
         <section id="projects">
 
-            <p class="section-label">
-                03 / PROJECTS
-            </p>
-
-            <h2>Selected Projects</h2>
-
-            <div class="projects-grid">
+            <h2>Projects</h2>
 
 
-                <!-- PROJECT 1 -->
-                <article class="project-card">
+            <!-- PROJECT 1 -->
 
-                    <p class="project-number">
-                        01
-                    </p>
+            <div class="project">
 
-                    <h3>
-                        Baker Hughes Equity Research
-                    </h3>
+                <h3>Baker Hughes Equity Research</h3>
 
-                    <p>
-                        Conducted fundamental analysis of Baker Hughes and developed
-                        an investment recommendation supported by industry research,
-                        financial analysis, and valuation.
-                    </p>
+                <p>
+                    Conducted fundamental analysis of Baker Hughes and developed
+                    an investment recommendation supported by industry research,
+                    financial analysis, and valuation.
+                </p>
 
-                    <div class="tags">
-
-                        <span>Equity Research</span>
-
-                        <span>Valuation</span>
-
-                        <span>Financial Modeling</span>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PROJECT 2 -->
-                <article class="project-card">
-
-                    <p class="project-number">
-                        02
-                    </p>
-
-                    <h3>
-                        Rutgers Student Managed Fund
-                    </h3>
-
-                    <p>
-                        Analyzed publicly traded healthcare companies through the
-                        Rutgers Student Managed Fund, evaluating earnings, industry
-                        trends, financial performance, and investment opportunities.
-                    </p>
-
-                    <div class="tags">
-
-                        <span>Healthcare</span>
-
-                        <span>Investing</span>
-
-                        <span>Equity Research</span>
-
-                    </div>
-
-                    <a
-                        href="https://www.rutgerssmf.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                    >
-                        View Rutgers SMF →
-                    </a>
-
-                </article>
-
-
-                <!-- PROJECT 3 -->
-                <article class="project-card">
-
-                    <p class="project-number">
-                        03
-                    </p>
-
-                    <h3>
-                        LIBOR Financial Newsletter
-                    </h3>
-
-                    <p>
-                        Research and analyze publicly traded healthcare companies,
-                        earnings reports, and industry trends to produce financial
-                        commentary on developments across the healthcare sector.
-                    </p>
-
-                    <div class="tags">
-
-                        <span>Financial Markets</span>
-
-                        <span>Healthcare</span>
-
-                        <span>Research</span>
-
-                    </div>
-
-                    <a
-                        href="https://www.rulibor.com/financial"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                    >
-                        View LIBOR Financial →
-                    </a>
-
-                </article>
-
+                <p>
+                    <strong>Skills:</strong>
+                    Equity Research, Valuation, Financial Modeling
+                </p>
 
             </div>
 
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project">
+
+                <h3>Rutgers Student Managed Fund</h3>
+
+                <p>
+                    Analyzed publicly traded healthcare companies through the
+                    Rutgers Student Managed Fund, evaluating earnings, industry
+                    trends, financial performance, and investment opportunities.
+                </p>
+
+                <p>
+                    <strong>Skills:</strong>
+                    Healthcare, Investing, Equity Research
+                </p>
+
+                <a
+                    href="https://www.rutgerssmf.com/"
+                    target="_blank"
+                >
+                    View Rutgers Student Managed Fund
+                </a>
+
+            </div>
+
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="project">
+
+                <h3>LIBOR Financial Newsletter</h3>
+
+                <p>
+                    Research and analyze publicly traded healthcare companies,
+                    earnings reports, and industry trends to produce financial
+                    commentary on developments across the healthcare sector.
+                </p>
+
+                <p>
+                    <strong>Skills:</strong>
+                    Financial Markets, Healthcare, Research
+                </p>
+
+                <a
+                    href="https://www.rulibor.com/financial"
+                    target="_blank"
+                >
+                    View LIBOR Financial Newsletter
+                </a>
+
+            </div>
+
+
         </section>
+
 
     </main>
 
 
+
     <!-- FOOTER -->
+
     <footer>
 
-        <h2>
-            Amala Vilivalam
-        </h2>
-
         <p>
-            Finance & Economics • Rutgers Business School
-        </p>
-
-        <p class="copyright">
-            © 2026 Amala Vilivalam
+            Amala Vilivalam | Rutgers Business School
         </p>
 
     </footer>
