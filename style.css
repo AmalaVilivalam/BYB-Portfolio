@@ -1,3 +1,8 @@
+/* =========================================
+   AMALA VILIVALAM - PERSONAL PORTFOLIO
+   ========================================= */
+
+
 /* ------------------------------
    BASIC RESET
 ------------------------------ */
@@ -43,6 +48,7 @@ nav {
 
 .nav-container h2 {
     font-size: 22px;
+    font-weight: 700;
 }
 
 .nav-links {
@@ -55,6 +61,7 @@ nav {
     color: #161616;
     font-size: 14px;
     font-weight: 600;
+    transition: opacity 0.2s ease;
 }
 
 .nav-links a:hover {
@@ -63,7 +70,7 @@ nav {
 
 
 /* ------------------------------
-   HERO
+   HERO SECTION
 ------------------------------ */
 
 .hero {
@@ -76,7 +83,7 @@ nav {
 }
 
 .hero-content {
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
     width: 100%;
 }
@@ -86,6 +93,7 @@ nav {
     letter-spacing: 2px;
     margin-bottom: 25px;
     color: #bbbbbb;
+    font-weight: 600;
 }
 
 .hero h1 {
@@ -102,6 +110,11 @@ nav {
     margin-bottom: 40px;
 }
 
+
+/* ------------------------------
+   MAIN BUTTON
+------------------------------ */
+
 .button {
     display: inline-block;
     background: white;
@@ -110,15 +123,18 @@ nav {
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
+    transition: opacity 0.2s ease,
+                transform 0.2s ease;
 }
 
 .button:hover {
     opacity: 0.8;
+    transform: translateY(-2px);
 }
 
 
 /* ------------------------------
-   SECTIONS
+   MAIN CONTENT
 ------------------------------ */
 
 main {
@@ -143,11 +159,12 @@ section {
 section h2 {
     font-size: 42px;
     margin-bottom: 40px;
+    line-height: 1.2;
 }
 
 
 /* ------------------------------
-   ABOUT
+   PERSONAL STATEMENT / ABOUT
 ------------------------------ */
 
 .statement {
@@ -172,6 +189,13 @@ section h2 {
     border: 1px solid #dddddd;
     padding: 22px;
     font-weight: 600;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.skill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 
@@ -189,20 +213,29 @@ section h2 {
     background: white;
     padding: 35px;
     border: 1px solid #dddddd;
-    min-height: 360px;
+    min-height: 390px;
     display: flex;
     flex-direction: column;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
 }
 
 .project-number {
     color: #888888;
     font-size: 13px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    font-weight: 600;
 }
 
 .project-card h3 {
     font-size: 24px;
     margin-bottom: 20px;
+    line-height: 1.25;
 }
 
 .project-card > p:not(.project-number) {
@@ -210,11 +243,16 @@ section h2 {
     margin-bottom: 30px;
 }
 
+
+/* ------------------------------
+   PROJECT TAGS
+------------------------------ */
+
 .tags {
-    margin-top: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
+    margin-top: auto;
 }
 
 .tags span {
@@ -222,6 +260,31 @@ section h2 {
     padding: 7px 10px;
     font-size: 11px;
     border-radius: 3px;
+    font-weight: 600;
+}
+
+
+/* ------------------------------
+   PROJECT LINKS
+------------------------------ */
+
+.project-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: #111111;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 1px solid #111111;
+    padding-bottom: 3px;
+    align-self: flex-start;
+    transition: opacity 0.2s ease,
+                transform 0.2s ease;
+}
+
+.project-link:hover {
+    opacity: 0.5;
+    transform: translateX(3px);
 }
 
 
@@ -252,18 +315,10 @@ footer p {
 
 
 /* ------------------------------
-   MOBILE
+   TABLET / SMALLER SCREENS
 ------------------------------ */
 
-@media (max-width: 800px) {
-
-    .nav-links {
-        gap: 15px;
-    }
-
-    .hero h1 {
-        letter-spacing: -2px;
-    }
+@media (max-width: 900px) {
 
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -273,20 +328,88 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    .statement {
-        font-size: 22px;
+    .project-card {
+        min-height: auto;
     }
 
 }
 
-@media (max-width: 500px) {
+
+/* ------------------------------
+   MOBILE
+------------------------------ */
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 70vh;
+        padding: 70px 6%;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .intro {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 0 6%;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    section h2 {
+        font-size: 34px;
+    }
+
+    .statement {
+        font-size: 22px;
+    }
 
     .skills-grid {
         grid-template-columns: 1fr;
     }
 
-    .nav-links a {
-        font-size: 12px;
+    .project-card {
+        padding: 28px;
+    }
+
+}
+
+
+/* ------------------------------
+   VERY SMALL MOBILE SCREENS
+------------------------------ */
+
+@media (max-width: 420px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .eyebrow {
+        font-size: 11px;
     }
 
 }
